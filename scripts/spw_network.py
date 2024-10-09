@@ -334,6 +334,7 @@ if __name__ == "__main__":
         STDP_mode = sys.argv[1]
     except:
         STDP_mode = "sym"
+    STDP_mode = "sym"   # or "asym" depending on what you want
     assert STDP_mode in ["sym", "asym"]
     linear = True
     cue = False
