@@ -67,13 +67,14 @@ def learning(spiking_neurons, spike_times, taup, taum, Ap, Am, wmax, w_init):
 
 
 if __name__ == "__main__":
+    STDP_mode = "sym"  # or "asym" depending on what you want
 
     try:
         STDP_mode = sys.argv[1]
     except:
         STDP_mode = "sym"
     assert STDP_mode in ["asym", "sym"]
-
+    
     place_cell_ratio = 0.5
     linear = True
     f_in = "spike_trains_%.1f_linear.npz" % place_cell_ratio if linear else "spike_trains_%.1f.npz" % place_cell_ratio
