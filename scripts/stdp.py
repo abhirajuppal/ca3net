@@ -6,7 +6,7 @@ updated to produce symmetric STDP curve as reported in Mishra et al. 2016 - 10.1
 authors: András Ecker, Eszter Vértes, last update: 11.2017
 """
 
-%matplotlib inline
+
 import os, sys, warnings
 import numpy as np
 import random as pyrandom
